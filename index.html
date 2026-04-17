@@ -1,52 +1,276 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Bulbul Chowdhury</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bulbul Chowdhury | IT Graduate</title>
   <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
     body {
-      font-family: Arial;
-      margin: 40px;
-      background-color: #f4f4f4;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+      line-height: 1.6;
     }
-    .container {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
+
+    header {
+      background: linear-gradient(135deg, #0f172a, #1d4ed8, #06b6d4);
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 18px;
       max-width: 700px;
+      margin: 0 auto 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: white;
+      color: #0f172a;
+      padding: 12px 22px;
+      margin: 8px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 2px solid white;
+      color: white;
+    }
+
+    nav {
+      background: #111827;
+      text-align: center;
+      padding: 14px 10px;
+      position: sticky;
+      top: 0;
+    }
+
+    nav a {
+      color: #e2e8f0;
+      text-decoration: none;
+      margin: 0 14px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    .container {
+      max-width: 1000px;
       margin: auto;
+      padding: 40px 20px;
     }
-    h1 {
-      color: #333;
+
+    .section {
+      margin-bottom: 40px;
+      background: #1e293b;
+      padding: 28px;
+      border-radius: 14px;
+      box-shadow: 0 0 18px rgba(0,0,0,0.25);
     }
-    h2 {
-      color: #555;
+
+    .section h2 {
+      color: #38bdf8;
+      margin-bottom: 18px;
+      font-size: 28px;
+      border-bottom: 2px solid #334155;
+      padding-bottom: 8px;
+    }
+
+    .skills-list,
+    .project-list,
+    .experience-list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .skills-list li,
+    .project-list li,
+    .experience-list li {
+      background: #0f172a;
+      margin-bottom: 12px;
+      padding: 14px;
+      border-radius: 10px;
+    }
+
+    .tag-wrap {
+      margin-top: 15px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #38bdf8;
+      color: #0f172a;
+      padding: 6px 12px;
+      border-radius: 20px;
+      margin: 5px 8px 0 0;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #94a3b8;
+      font-size: 14px;
+    }
+
+    a.link {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+
+    a.link:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 32px;
+      }
+
+      .two-col {
+        grid-template-columns: 1fr;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 8px 10px;
+      }
     }
   </style>
 </head>
 <body>
 
-<div class="container">
-  <h1>Bulbul Chowdhury</h1>
-  <p><strong>IT Graduate | Networking & Cybersecurity</strong></p>
+  <header id="home">
+    <h1>Bulbul Chowdhury</h1>
+    <p>IT Graduate specialising in Networking & Cybersecurity, with strong interest in IT support, systems, and enterprise technology.</p>
+    <a class="btn" href="#contact">Contact Me</a>
+    <a class="btn btn-outline" href="#projects">View Projects</a>
+  </header>
 
-  <h2>About Me</h2>
-  <p>I am an IT graduate with a strong interest in networking, cybersecurity, and IT support. I enjoy solving technical problems and working in fast-paced environments.</p>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-  <h2>Skills</h2>
-  <ul>
-    <li>Networking (TCP/IP, DNS, DHCP, VLAN)</li>
-    <li>Active Directory</li>
-    <li>Windows & Linux</li>
-    <li>Cybersecurity Basics</li>
-  </ul>
+  <div class="container">
 
-  <h2>Projects</h2>
-  <p>• Configured firewall using pfSense</p>
-  <p>• Network traffic analysis using Wireshark</p>
+    <section class="section" id="about">
+      <h2>About Me</h2>
+      <p>
+        I am a recent IT graduate from UTS with a major in Networking and Cybersecurity. I enjoy solving technical problems, learning new technologies, and supporting reliable IT operations. I also bring over 10 years of experience working in fast-paced environments where communication, teamwork, and problem-solving were essential.
+      </p>
+      <div class="tag-wrap">
+        <span class="tag">Networking</span>
+        <span class="tag">Cybersecurity</span>
+        <span class="tag">IT Support</span>
+        <span class="tag">Active Directory</span>
+        <span class="tag">Windows & Linux</span>
+      </div>
+    </section>
 
-  <h2>Contact</h2>
-  <p>Email: chowdhury999@gmail.com</p>
-</div>
+    <section class="section" id="skills">
+      <h2>Technical Skills</h2>
+      <div class="two-col">
+        <ul class="skills-list">
+          <li><strong>Networking:</strong> TCP/IP, DNS, DHCP, VLAN, routing and switching</li>
+          <li><strong>Systems:</strong> Windows and Linux administration and troubleshooting</li>
+          <li><strong>IT Support:</strong> Incident handling, troubleshooting, user support</li>
+        </ul>
+        <ul class="skills-list">
+          <li><strong>Security Tools:</strong> Wireshark, pfSense, Splunk, Kali Linux</li>
+          <li><strong>Programming:</strong> Python (basic), Java (basic), HTML, CSS, JavaScript</li>
+          <li><strong>Database:</strong> PostgreSQL</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <h2>Projects</h2>
+      <ul class="project-list">
+        <li>
+          <strong>Firewall Configuration with pfSense</strong><br>
+          Configured firewall rules to secure network traffic and improve access control in lab environments.
+        </li>
+        <li>
+          <strong>Network Traffic Analysis with Wireshark</strong><br>
+          Analysed traffic patterns and supported troubleshooting by inspecting packets and identifying issues.
+        </li>
+        <li>
+          <strong>Windows Server & Active Directory Lab</strong><br>
+          Created users, groups, domain controller setup, Group Policy changes, and server management using VMware.
+        </li>
+      </ul>
+    </section>
+
+    <section class="section" id="experience">
+      <h2>Experience</h2>
+      <ul class="experience-list">
+        <li>
+          <strong>Dock Manager – Westfield Bondi Junction</strong> (Aug 2023 – Nov 2025)<br>
+          Acted as first point of contact for operational issues, resolved problems quickly, coordinated with stakeholders, and maintained service delivery in a high-volume environment.
+        </li>
+        <li>
+          <strong>Dock Master – Westfield Bondi Junction</strong> (Jun 2014 – Aug 2023)<br>
+          Provided front-line support, handled multiple requests, maintained records, and supported incident escalation.
+        </li>
+        <li>
+          <strong>Store Associate – Big W</strong> (Oct 2010 – Dec 2017)<br>
+          Delivered customer service, handled enquiries, and supported day-to-day retail operations.
+        </li>
+      </ul>
+    </section>
+
+    <section class="section" id="education">
+      <h2>Education</h2>
+      <ul class="experience-list">
+        <li><strong>Bachelor of Information Technology (Networking & Cybersecurity)</strong> – UTS, 2025</li>
+        <li><strong>Advanced Diploma of Information Technology (Cyber Security)</strong> – TAFE NSW, 2022</li>
+        <li><strong>Diploma of Information Technology (Networking)</strong> – TAFE NSW, 2022</li>
+        <li><strong>Certificate IV & III in Information Technology</strong> – TAFE NSW, 2021</li>
+        <li><strong>CCNAv7</strong> – Cisco Networking Academy, 2022</li>
+      </ul>
+    </section>
+
+    <section class="section" id="contact">
+      <h2>Contact</h2>
+      <p><strong>Email:</strong> <a class="link" href="mailto:chowdhury999@gmail.com">chowdhury999@gmail.com</a></p>
+      <p><strong>GitHub:</strong> <a class="link" href="https://github.com/bc-dotcom" target="_blank">github.com/bc-dotcom</a></p>
+      <p><strong>LinkedIn:</strong> <a class="link" href="#" target="_blank">Add your LinkedIn profile link here</a></p>
+    </section>
+
+  </div>
+
+  <footer>
+    © 2026 Bulbul Chowdhury | IT Graduate Portfolio
+  </footer>
 
 </body>
 </html>
